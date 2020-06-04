@@ -25,6 +25,10 @@ class PigCard extends React.Component{
         console.log(this.state.style.display)
     }
 
+    renderDetails = () => {
+
+    }
+
     render(){
         const pigImg = require(`../hog-imgs/${this.props.name.toLowerCase().replace(/ /g, '_')}.jpg`)
         let pigInfoDisplay = this.state.style
@@ -36,8 +40,9 @@ class PigCard extends React.Component{
                     <img src={pigImg}/>
                 </div>
                 <div className="hogDescription" style={pigInfoDisplay}>
-                    <div>SPECIALTY: {this.props.specialty}</div>
-                    <div>WEIGHT: {this.props.weight}</div>
+                    <P>SPECIALTY: {this.props.specialty}</P>
+                    <P>WEIGHT: {this.props.weight}</P>
+                    <P>GREASED: {this.props.greased}</P>
                 </div>
             </div>
         )

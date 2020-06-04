@@ -8,12 +8,11 @@ import PigIndex from "./PigIndex"
 class App extends Component {
   constructor(props){
     super()
-    
-    this.state = {
-        
-    }   
-}
-
+  }
+  
+  state = {
+    greasedFilter: false
+  }
 
   // fetchHogData = () => {    
   //   const apiUrl = '../src/porkers_data.js'
